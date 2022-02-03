@@ -33,12 +33,14 @@ export default class Navbar extends Component {
                             <li className="nav-item"><Link className="nav-link" to="/sports">Sports</Link></li>
                             <li className="nav-item"><Link className="nav-link" to="/technology">Technology</Link></li>
                         </ul>
-                        {/* <select style={{ height: "40px", fontSize: "16px", borderColor: "purple" }} className="form-select form-select-lg bg-light rounded" aria-label=".form-select-lg example" onChange={this.handleChange}>
-                            <option selected>Choose country</option>
-                            <option value="in">India</option>
-                            <option value="au">Australia</option>
-                            <option value="us">United States</option>
-                        </select> */}
+                        <select defaultValue={'DEFAULT'} >
+                            <option value="DEFAULT" disabled>Choose a salutation ...</option>
+                            <option value="1">Mr</option>
+                            <option value="2">Mrs</option>
+                            <option value="3">Ms</option>
+                            <option value="4">Miss</option>
+                            <option value="5">Dr</option>
+                        </select>
                     </div>
                 </nav>
             </div>
