@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import NewsItem from './NewsItem'
 import Spinner from './Spinner';
 import PropTypes from 'prop-types'
-import axios from 'axios';
 
 export default class News extends Component {
 
@@ -371,8 +370,8 @@ export default class News extends Component {
                     <h1 className='text-center' style={{ margin: "30px 0px" }}><b>Top Headlines from {this.capitailse(this.props.category)}</b></h1>
                     {this.state.loading && <Spinner />}
                     <div className='row'>
-                        {!this.state.loading && this.state.articles.map((ele) => {
-                            return <div className='col-md-4' key={ele.url}>
+                        {!this.state.loading && this.state.articles?.map((ele) => {
+                            return <div className='col-md-4' key={ele?.url}>
                                 <NewsItem colorx={this.state.colorx} className="modern" source={ele.source?.name ?? ""} publishedAt={ele.publishedAt} author={ele.author ? ele.author : "unknown"} title={ele ? ele.title : ""} description={ele ? ele.description : ""} imgurl={ele ? ele.urlToImage : ""} readurl={ele ? ele.url : ""} />
                             </div>
                         })}

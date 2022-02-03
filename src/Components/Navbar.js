@@ -33,12 +33,12 @@ export default class Navbar extends Component {
                             <li className="nav-item"><Link className="nav-link" to="/sports">Sports</Link></li>
                             <li className="nav-item"><Link className="nav-link" to="/technology">Technology</Link></li>
                         </ul>
-                        <select style={{ height: "40px", fontSize: "16px", borderColor: "purple" }} className="form-select form-select-lg bg-light rounded" aria-label=".form-select-lg example" onChange={this.handleChange}>
+                        {/* <select style={{ height: "40px", fontSize: "16px", borderColor: "purple" }} className="form-select form-select-lg bg-light rounded" aria-label=".form-select-lg example" onChange={this.handleChange}>
                             <option selected>Choose country</option>
                             <option value="in">India</option>
                             <option value="au">Australia</option>
                             <option value="us">United States</option>
-                        </select>
+                        </select> */}
                     </div>
                 </nav>
             </div>
